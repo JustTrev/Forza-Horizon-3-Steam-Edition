@@ -1,0 +1,10 @@
+c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\bin\Release\Forza Horizon 3 Steam Edition.exe.config
+c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\bin\Release\Forza Horizon 3 Steam Edition.exe
+c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\bin\Release\Forza Horizon 3 Steam Edition.pdb
+c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\bin\Release\Forza Horizon 3 Steam Edition.xml
+c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\obj\Release\Forza_Horizon_3_Steam_Edition.frmMain.resources
+c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\obj\Release\Forza_Horizon_3_Steam_Edition.Resources.resources
+c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\obj\Release\Forza Horizon 3 Steam Edition.vbproj.GenerateResource.Cache
+c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\obj\Release\Forza Horizon 3 Steam Edition.exe
+c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\obj\Release\Forza Horizon 3 Steam Edition.xml
+c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\obj\Release\Forza Horizon 3 Steam Edition.pdb
