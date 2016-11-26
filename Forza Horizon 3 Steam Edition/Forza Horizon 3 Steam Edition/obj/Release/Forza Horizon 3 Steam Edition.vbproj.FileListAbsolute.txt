@@ -8,4 +8,3 @@ c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Ed
 c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\obj\Release\Forza Horizon 3 Steam Edition.exe
 c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\obj\Release\Forza Horizon 3 Steam Edition.xml
 c:\users\justtrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\obj\Release\Forza Horizon 3 Steam Edition.pdb
-C:\Users\JustTrev\documents\visual studio 2015\Projects\Forza Horizon 3 Steam Edition\Forza Horizon 3 Steam Edition\obj\Release\Forza Horizon 3 Steam Edition.vbprojResolveAssemblyReference.cache

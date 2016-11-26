@@ -28,7 +28,6 @@ Partial Class frmMain
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.cbxQuietHours = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'Timer1
@@ -43,7 +42,7 @@ Partial Class frmMain
         '
         'btnQuit
         '
-        Me.btnQuit.Location = New System.Drawing.Point(247, 12)
+        Me.btnQuit.Location = New System.Drawing.Point(238, 20)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(75, 23)
         Me.btnQuit.TabIndex = 0
@@ -55,27 +54,16 @@ Partial Class frmMain
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(12, 17)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(229, 26)
+        Me.Label1.Size = New System.Drawing.Size(214, 26)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "This will show your friends you are playing FH3." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "To stop either exit FH3 or clic" &
-    "k ""Quit Game""."
-        '
-        'cbxQuietHours
-        '
-        Me.cbxQuietHours.AutoSize = True
-        Me.cbxQuietHours.Location = New System.Drawing.Point(240, 41)
-        Me.cbxQuietHours.Name = "cbxQuietHours"
-        Me.cbxQuietHours.Size = New System.Drawing.Size(82, 17)
-        Me.cbxQuietHours.TabIndex = 2
-        Me.cbxQuietHours.Text = "Quiet Hours"
-        Me.cbxQuietHours.UseVisualStyleBackColor = True
+        Me.Label1.Text = "This will show friends you are playing FH3." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "To quit either exit FH3 or click ""Qu" &
+    "it Game""."
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(334, 70)
-        Me.Controls.Add(Me.cbxQuietHours)
+        Me.ClientSize = New System.Drawing.Size(325, 62)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnQuit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -92,5 +80,4 @@ Partial Class frmMain
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents btnQuit As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents cbxQuietHours As CheckBox
 End Class
