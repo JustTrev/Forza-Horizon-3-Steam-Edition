@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Forza_Horizon_3_Steam_Edition.frmMain
+            Me.MainForm = Global.Forza_Horizon_3_Steam_Edition.SteamOverlay
         End Sub
     End Class
 End Namespace

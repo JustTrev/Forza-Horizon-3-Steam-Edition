@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,271 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PEANUTEEEE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEANUTEEEE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Memory_Memory_Slot_Select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Memory Memory Slot Select.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices13.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="camera1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\camera1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEANUT2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEANUT2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comm_voice_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm voice 9.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices10.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices9.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Games_Main_Menu_Out_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Games Main Menu Out_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Games_Sub_Menu_In_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Games Sub Menu In_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Steam6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Steam6.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Music_Select_Track_In_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Music Select Track In_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comm_voice_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm voice 1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comm_voice_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm voice 2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Music_Select_Track_Out_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Music Select Track Out_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices11.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Global_B_Button_Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Global B Button Back.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_12_HYDROTHUNDER_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_12_HYDROTHUNDER_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dfdfdfdf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dfdfdfdf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings_Main_Menu_Out_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings Main Menu Out_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Games_Info_Screen_In" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Games Info Screen In.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Pinger1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Pinger1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sendbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sendbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comm_voice_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm voice 4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Settings_Sub_Menu_In_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings Sub Menu In_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Games_Info_Screen_In_MSurr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Games Info Screen In MSurr.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comm_static_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm static 1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Steam5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Steam5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Games_Info_Screen_Out_MSurr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Games Info Screen Out MSurr.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Forzaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forzaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings_Sub_Menu_Out_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings Sub Menu Out_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Global_Keyboard_Stroke_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Global Keyboard Stroke 1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comm_voice_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm voice 3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Global_Keyboard_Stroke_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Global Keyboard Stroke 2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Steam7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Steam7.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Music_CD_Select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Music CD Select.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Global_Error_Message_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Global Error Message B.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices7.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Games_Info_Screen_Out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Games Info Screen Out.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Global_Delete_Destroy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Global Delete_Destroy.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Steam3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Steam3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_05_ENGINEROOM_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_05_ENGINEROOM_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Global_Main_MenuBack3ver2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Global Main MenuBack3ver2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices12.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Games_Sub_Menu_Out_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Games Sub Menu Out_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices8.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comm_voice_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm voice 8.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Global_Main_MenuFwd3ver2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Global Main MenuFwd3ver2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comm_voice_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm voice 5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comm_voice_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm voice 6.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comm_static_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm static 2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Forzaas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forzaas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coconut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coconut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comm_static_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm static 4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comm_voice_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm voice 7.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Memory_Controller_Select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Memory Controller Select.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Steam2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Steam2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEANUTBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEANUTBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Games_Main_Menu_In_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Games Main Menu In_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Global_A_Button_Select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Global A Button Select.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Music_Main_Menu_In_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Music Main Menu In_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warning.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Memory_Games_Select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Memory Games Select.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Voices6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Voices6.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Steam4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Steam4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Control_Room_Loop_ver2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Control Room Loop ver2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Global_Completion_Beep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Global Completion Beep.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_06_COMMUNICATION_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_06_COMMUNICATION_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comm_static_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comm static 3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="coconut2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coconut2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="txting_press_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txting_press_a.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="coconut1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coconut1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Global_Scroll_Beep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Global Scroll Beep.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Control_Room_Loop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Control Room Loop.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Settings_Lang_SubMenu_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings Lang SubMenu Sel.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Settings_Parent_SubMenu_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings Parent SubMenu Sel.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Music_Main_Menu_Out_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Music Main Menu Out_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Global_Progress_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Global Progress Bar.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="coconu3t" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coconu3t.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings_Main_Menu_In_LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings Main Menu In_LR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AMB_EC_Steam1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMB_EC_Steam1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grabbber" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grabbber.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

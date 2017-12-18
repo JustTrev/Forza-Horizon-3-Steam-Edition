@@ -10,12 +10,12 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Forza Horizon 3 Steam Edition")>
 <Assembly: AssemblyDescription("Forza Horizon 3")>
-<Assembly: AssemblyCompany("Turn 2")>
-<Assembly: AssemblyProduct("Forza Horizon 3 Steam Edition")>
-<Assembly: AssemblyCopyright("Copyright ©  2016")>
+<Assembly: AssemblyCompany("Peanut")>
+<Assembly: AssemblyProduct("Peanut  BETA")>
+<Assembly: AssemblyCopyright("Copyright ©  2017")>
 <Assembly: AssemblyTrademark("")>
 
-<Assembly: ComVisible(False)>
+<Assembly: ComVisible(True)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("fe53e141-8812-490f-ae7a-5627a794092e")>
