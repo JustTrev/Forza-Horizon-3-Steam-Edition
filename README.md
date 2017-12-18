@@ -29,4 +29,4 @@ Checkout the source code and see if you can make improvemennts!
 
 # End Goal.
 
-The goal is to make a unified solution for full fleged games, homebrew, networking, marketplace, screenshots, friends list, recent players, and emulatator support within the efforts of the community.  The future to support all generations of gaming in one place.
+The goal is to make a unified solution for full fleged games, homebrew, networking, marketplace, screenshots, friends list, recent players, and emulatator support. All within the efforts of the community.  The future to support all generations of gaming in one place.
