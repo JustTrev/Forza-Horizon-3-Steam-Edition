@@ -13,6 +13,21 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -75,6 +90,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Audio\AudioController.vb" />
+    <Compile Include="Data\ColorPallet.vb" />
+    <Compile Include="Data\vAccountInfo.vb" />
+    <Compile Include="Data\vbRegisterUsers.vb" />
+    <Compile Include="Helper.vb" />
+    <Compile Include="MD5Provider.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My\ApplicationEvents.vb" />
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -82,20 +109,62 @@
       <DependentUpon>frmMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="My\messages.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My\Program.vb" />
+    <Compile Include="PBJ.Designer.vb">
+      <DependentUpon>PBJ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PBJ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegKey.vb" />
+    <Compile Include="SteamOverlay.Designer.vb">
+      <DependentUpon>SteamOverlay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SteamOverlay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCPController.vb" />
+    <Compile Include="vbRCON.vb" />
+    <Compile Include="Windows\AccountFrms\frmAccountSettings.Designer.vb">
+      <DependentUpon>frmAccountSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AccountFrms\frmAccountSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\frmCommunityHub.Designer.vb">
+      <DependentUpon>frmCommunityHub.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\frmCommunityHub.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\frmPrivateMessage.Designer.vb">
+      <DependentUpon>frmPrivateMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\frmPrivateMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\frmRecentPlayers.Designer.vb">
+      <DependentUpon>frmRecentPlayers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\frmRecentPlayers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Test.Designer.vb">
+      <DependentUpon>Test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Test.vb">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -104,9 +173,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PBJ.resx">
+      <DependentUpon>PBJ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteamOverlay.resx">
+      <DependentUpon>SteamOverlay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\AccountFrms\frmAccountSettings.resx">
+      <DependentUpon>frmAccountSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\frmCommunityHub.resx">
+      <DependentUpon>frmCommunityHub.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\frmPrivateMessage.resx">
+      <DependentUpon>frmPrivateMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\frmRecentPlayers.resx">
+      <DependentUpon>frmRecentPlayers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Test.resx">
+      <DependentUpon>Test.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +213,113 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="forza-horizon-3.ico" />
+    <None Include="Resources\grabbber.png" />
+    <None Include="Resources\coconut2.png" />
+    <None Include="Resources\dfdfdfdf.png" />
+    <None Include="Resources\coconu3t.png" />
+    <None Include="Resources\coconut1.png" />
+    <None Include="Resources\coconut.png" />
+    <None Include="Resources\PEANUTBackground.png" />
+    <None Include="Resources\PEANUTEEEE.png" />
+    <None Include="Resources\Settings Sub Menu Out_LR.wav" />
+    <None Include="Resources\Settings Sub Menu In_LR.wav" />
+    <None Include="Resources\Settings Main Menu Out_LR.wav" />
+    <None Include="Resources\Settings Main Menu In_LR.wav" />
+    <None Include="Resources\Music Select Track Out_LR.wav" />
+    <None Include="Resources\Music Select Track In_LR.wav" />
+    <None Include="Resources\Music Main Menu Out_LR.wav" />
+    <None Include="Resources\Music Main Menu In_LR.wav" />
+    <None Include="Resources\Games Sub Menu Out_LR.wav" />
+    <None Include="Resources\Games Sub Menu In_LR.wav" />
+    <None Include="Resources\Games Main Menu Out_LR.wav" />
+    <None Include="Resources\Games Main Menu In_LR.wav" />
+    <None Include="Resources\Settings Parent SubMenu Sel.wav" />
+    <None Include="Resources\Settings Lang SubMenu Sel.wav" />
+    <None Include="Resources\Music CD Select.wav" />
+    <None Include="Resources\Games Info Screen Out.wav" />
+    <None Include="Resources\Games Info Screen Out MSurr.wav" />
+    <None Include="Resources\Games Info Screen In.wav" />
+    <None Include="Resources\Games Info Screen In MSurr.wav" />
+    <None Include="Resources\Memory Memory Slot Select.wav" />
+    <None Include="Resources\Memory Games Select.wav" />
+    <None Include="Resources\Memory Controller Select.wav" />
+    <None Include="Resources\Control Room Loop.wav" />
+    <None Include="Resources\Control Room Loop ver2.wav" />
+    <None Include="Resources\comm voice 9.wav" />
+    <None Include="Resources\comm voice 8.wav" />
+    <None Include="Resources\comm voice 7.wav" />
+    <None Include="Resources\comm voice 6.wav" />
+    <None Include="Resources\comm voice 5.wav" />
+    <None Include="Resources\comm voice 4.wav" />
+    <None Include="Resources\comm voice 3.wav" />
+    <None Include="Resources\comm voice 2.wav" />
+    <None Include="Resources\comm voice 1.wav" />
+    <None Include="Resources\comm static 4.wav" />
+    <None Include="Resources\comm static 3.wav" />
+    <None Include="Resources\comm static 2.wav" />
+    <None Include="Resources\comm static 1.wav" />
+    <None Include="Resources\AMB_EC_Voices13.wav" />
+    <None Include="Resources\AMB_EC_Voices12.wav" />
+    <None Include="Resources\AMB_EC_Voices11.wav" />
+    <None Include="Resources\AMB_EC_Voices10.wav" />
+    <None Include="Resources\AMB_EC_Voices9.wav" />
+    <None Include="Resources\AMB_EC_Voices8.wav" />
+    <None Include="Resources\AMB_EC_Voices7.wav" />
+    <None Include="Resources\AMB_EC_Voices6.wav" />
+    <None Include="Resources\AMB_EC_Voices5.wav" />
+    <None Include="Resources\AMB_EC_Voices4.wav" />
+    <None Include="Resources\AMB_EC_Voices3.wav" />
+    <None Include="Resources\AMB_EC_Voices2.wav" />
+    <None Include="Resources\AMB_EC_Voices1.wav" />
+    <None Include="Resources\AMB_EC_Steam7.wav" />
+    <None Include="Resources\AMB_EC_Steam6.wav" />
+    <None Include="Resources\AMB_EC_Steam5.wav" />
+    <None Include="Resources\AMB_EC_Steam4.wav" />
+    <None Include="Resources\AMB_EC_Steam3.wav" />
+    <None Include="Resources\AMB_EC_Steam2.wav" />
+    <None Include="Resources\AMB_EC_Steam1.wav" />
+    <None Include="Resources\AMB_EC_Pinger1.wav" />
+    <None Include="Resources\AMB_12_HYDROTHUNDER_LR.wav" />
+    <None Include="Resources\AMB_06_COMMUNICATION_LR.wav" />
+    <None Include="Resources\AMB_05_ENGINEROOM_LR.wav" />
+    <None Include="Resources\warning.wav" />
+    <None Include="Resources\txting_press_a.wav" />
+    <None Include="Resources\Global Scroll Beep.wav" />
+    <None Include="Resources\Global Progress Bar.wav" />
+    <None Include="Resources\Global Main MenuFwd3ver2.wav" />
+    <None Include="Resources\Global Main MenuBack3ver2.wav" />
+    <None Include="Resources\Global Keyboard Stroke 2.wav" />
+    <None Include="Resources\Global Keyboard Stroke 1.wav" />
+    <None Include="Resources\Global Error Message B.wav" />
+    <None Include="Resources\Global Delete_Destroy.wav" />
+    <None Include="Resources\Global Completion Beep.wav" />
+    <None Include="Resources\Global B Button Back.wav" />
+    <None Include="Resources\Global A Button Select.wav" />
+    <None Include="Resources\camera1.wav" />
+    <None Include="Resources\Forzaas.png" />
+    <None Include="Resources\Forzaa.png" />
+    <None Include="Resources\sendbtn.png" />
+    <None Include="Resources\PEANUT2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Audio\AmbientAudio\" />
+    <Folder Include="Audio\MainAudio\" />
+    <Folder Include="Audio\MemoryAudio\" />
+    <Folder Include="Audio\MusicAudio\" />
+    <Folder Include="Audio\SettingAudio\" />
+    <Folder Include="Audio\TransitionAudio\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

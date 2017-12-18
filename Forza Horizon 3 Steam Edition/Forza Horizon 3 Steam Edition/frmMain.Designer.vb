@@ -28,11 +28,13 @@ Partial Class frmMain
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Overlay = New System.ComponentModel.BackgroundWorker()
         Me.SuspendLayout()
         '
         'Timer1
         '
-        Me.Timer1.Interval = 5000
+        Me.Timer1.Interval = 12
         '
         'NotifyIcon1
         '
@@ -59,6 +61,16 @@ Partial Class frmMain
         Me.Label1.Text = "This will show friends you are playing FH3." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "To quit either exit FH3 or click ""Qu" &
     "it Game""."
         '
+        'Timer2
+        '
+        Me.Timer2.Enabled = True
+        Me.Timer2.Interval = 12
+        '
+        'Overlay
+        '
+        Me.Overlay.WorkerReportsProgress = True
+        Me.Overlay.WorkerSupportsCancellation = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -80,4 +92,6 @@ Partial Class frmMain
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents btnQuit As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Timer2 As Timer
+    Friend WithEvents Overlay As System.ComponentModel.BackgroundWorker
 End Class
