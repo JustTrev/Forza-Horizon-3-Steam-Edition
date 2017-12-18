@@ -11,14 +11,14 @@ New Lobby Chat system.
 New User Profile settings WIP.
 And more.
 
-# To help contribuite.
+# To help contribute.
 https://github.com/JustTrev/Forza-Horizon-3-Steam-Edition/tree/master/Forza%20Horizon%203%20Steam%20Edition/Forza%20Horizon%203%20Steam%20Edition
 (All subject to change.)
 
 Please be curtious as this is a open-source gaming platform that I wish to fully develope someday. Any other contributors are welcome.  Please send me a direct message here if you wish to expand and help develop this new platform.
 
 # End Goal.
-
+ 
 The goal is to make a unified solution for full fleged games, homebrew, networking, marketplace, screenshots, friends list, recent players, and emulatator support. All within the efforts of the community.  The future to support all generations of gaming in one place.
 
 
